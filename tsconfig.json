@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "lib": ["es2016", "dom"],
+    "target": "ES6",          // Версия JavaScript
+    "module": "ES6",          // Модульная система
+    "outDir": "./dist/js",       // Папка для скомпилированных файлов
+    "rootDir": "./src/ts",    // Папка с исходным кодом TypeScript
+    "strict": true            // Включение строгой типизации
+  },
+  "include": ["src/ts/**/*"] // Какие файлы компилировать
+}
