@@ -147,8 +147,13 @@ document.addEventListener('DOMContentLoaded', (event: Event) => {
 		if (target && target.textContent ) {
 			const screen: HTMLParagraphElement | null = document.querySelector('#screen-input');
 			if (screen && screen.textContent) {
+                /* Dot bug temp fix */
+				if ((screen.textContent[screen.textContent.length - 1] === "." && target.textContent === ".")
+                    || (["+", "-", "*", "/", "%"].includes(screen.textContent[screen.textContent.length - 1]) && target.textContent === ".")
+                ) return 0;
                 updateScreen(+screen.textContent === 0 ? target.textContent : `${screen.textContent}${target.textContent}`);
             }
+
 		}
 	}));
 
