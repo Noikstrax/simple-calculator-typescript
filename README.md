@@ -1,7 +1,7 @@
 # Калькулятор на TypeScript
 
 Простой калькулятор, написанный на TypeScript, HTML и CSS.
-## [Калькулятор](https://noikstrax.github.io/simple-calculator-typescript/index.html);
+## [Калькулятор](https://noikstrax.github.io/simple-calculator-typescript/index.html)
 
 
 ### Как запустить локально
